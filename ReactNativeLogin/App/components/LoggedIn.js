@@ -1,6 +1,7 @@
 'use strict';
 
-import React, {StyleSheet, Text, View, Component} from 'react-native';
+import {StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
 import Button from 'react-native-button';
 import CookieManager from 'react-native-cookies';
 import ReactNativeLogin from './App'
@@ -18,7 +19,7 @@ export default class LoggedIn extends Component {
       console.log(err);
       console.log(res);
     });
-    
+
     this.setState({
       loggedIn: false,
     });
@@ -33,14 +34,14 @@ export default class LoggedIn extends Component {
          </Text>
          <Button style={{color: 'black'}} onPress={this.logout.bind(this)}>Logout</Button>
        </View>
-     ); 
+     );
     }
     else {
       return (
         <ReactNativeLogin/>
       );
     }
-    
+
   }
 }
 

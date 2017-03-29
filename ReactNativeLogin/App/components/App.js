@@ -1,6 +1,7 @@
 'use strict';
 
-import React, {StyleSheet, View, WebView, Component} from 'react-native';
+import {StyleSheet, View, WebView } from 'react-native';
+import React, { Component } from 'react';
 import CookieManager from 'react-native-cookies';
 import LoggedIn from './LoggedIn'
 

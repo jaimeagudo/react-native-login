@@ -1,10 +1,7 @@
 'use strict';
 
-import React from 'react-native';
+import React from 'react';
 import ReactNativeLogin from './App/components/App';
-
-var {
-  AppRegistry
-} = React;
+import { AppRegistry } from 'react-native'
 
 AppRegistry.registerComponent('ReactNativeLogin', () => ReactNativeLogin);
